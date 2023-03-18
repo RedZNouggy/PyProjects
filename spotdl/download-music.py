@@ -36,7 +36,7 @@ subprocess.run(["python3", "-m", "spotdl", f' -o {Change-Path}{artist_name}/{alb
 
 dir_path = f"{Change-Path}{artist_name}/{album_name}/"
 
-# Déplacement de tous les fichiers MP3 dans le dossier de destination
+# Move all MP3 files to the destination folder
 for file_name in os.listdir("{Change-Path}"):
     if file_name.endswith(".mp3"):
         src_path = os.path.join(os.getcwd(), file_name)
