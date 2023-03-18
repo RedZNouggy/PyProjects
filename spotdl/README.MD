@@ -2,6 +2,8 @@
 
 [To Download spotdl](https://github.com/spotDL/spotify-downloader)
 
+### DON'T FORGET TO CHANGE every {ChangePath} IN "download-music.py" 
+
 To launch it if you use the alias in .bashrc : 
 ```
 download {spotify-link}
