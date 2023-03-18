@@ -1,5 +1,6 @@
-# Made by Samuel PAGES 19/03/2023
+#!/usr/bin/python3
 
+# Made by Samuel PAGES 19/03/2023
 import re
 import os
 import argparse
