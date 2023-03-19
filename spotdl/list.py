@@ -16,4 +16,4 @@ with open(filename, 'r') as f:
         # Removal of spaces at the beginning and end of a line
         line = line.strip()
         # Execution of the "download line" command using subprocess
-        subprocess.run(["python3", "/opt/data1To/Create Music/download-music.py", line], check=True)
+        subprocess.run(["python3", "{ChangePath}download-music.py", line], check=True)
