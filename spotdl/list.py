@@ -5,7 +5,7 @@ import subprocess
 
 # Checking the number of arguments
 if len(sys.argv) != 2:
-    print("Usage: python3 list.py filename.txt")
+    print("Usage: python3 list.py tabl.txt")
     sys.exit(1)
 
 # Opening the text file in read mode
