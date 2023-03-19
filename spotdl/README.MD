@@ -2,7 +2,7 @@
 
 [To Download spotdl](https://github.com/spotDL/spotify-downloader)
 
-### DON'T FORGET TO CHANGE EVERY {ChangePath} IN "download-music.py" 
+### DON'T FORGET TO CHANGE EVERY {ChangePath} IN "download-music.py" AND "list.py"
 
 To launch it if you use the alias in .bashrc : 
 ```
