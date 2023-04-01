@@ -23,7 +23,7 @@ def errortext(msg) -> str:
 # Opening the text file in read mode
 FILE_NAME = sys.argv[1]
 with open(FILE_NAME, 'r', encoding="utf-8") as f:
-    if os.path.getsize(FILE_NAME) > 0:
+    if os.path.getsize(FILE_NAME) == 0:
         errortext("Nothing in the txt file")
     else:
         # Reading the file line by line
