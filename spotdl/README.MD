@@ -8,21 +8,7 @@ To launch it if you use the alias in .bashrc :
 ```
 download {spotify-link}
 ```
-
-usage: download_music.py [-h] [--temp-path TEMP_PATH] [--final-path FINAL_PATH] album_url
-
-Download Spotify album in MP3
-
-positional arguments:
-  album_url             Link of Spotify album
-
-optional arguments:
-  -h, --help            show this help message and exit
-  --temp-path TEMP_PATH
-                        Enter the path where MP3 will be temporary stored
-  --final-path FINAL_PATH
-                        Enter the path where MP3 will be definitly stored like "{final_path} + / + artist_name + / + album_name + / + file_name"
-                        
+![image](https://user-images.githubusercontent.com/81537743/229322633-8842c901-19d2-4368-8597-9993ae0cce8d.png)
 
 To launch it with a list of album links to earn some time :
 ```
