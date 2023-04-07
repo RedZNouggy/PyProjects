@@ -33,7 +33,7 @@ with open(FILE_NAME, 'r', encoding="utf-8") as f:
             # Execution of the "download line" command using subprocess
             subprocess.run([
                 "python3",
-                "{ChangePath}download_music.py",
+                "{ChangePath}{download_music_script}.py",
                 "--temp-path '{ChangePath}'",
                 "--final-path '{ChangePath}'",
                 line
