@@ -4,19 +4,12 @@
 
 ### To launch it if you use the alias in .bashrc : 
 ```
-# Using .bashrc
 download {spotify_album_link}
 ```
 ![image](https://user-images.githubusercontent.com/81537743/230629335-f3201e33-560f-4bf5-9620-332e7c0429c8.png)
 
-### To launch it with a list of album links to earn some time :
+### To launch it if you use the alias in .bashrc :
 ```
-./list.py tabl.txt
-```
-
-### To launch with an artist link and download all of the artist :
-```
-# Using .bashrc_1
 download {spotify_artist_link}
 ```
 
