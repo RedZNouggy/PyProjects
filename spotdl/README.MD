@@ -8,7 +8,7 @@ To launch it if you use the alias in .bashrc :
 ```
 download {spotify-link}
 ```
-![image](https://user-images.githubusercontent.com/81537743/229322633-8842c901-19d2-4368-8597-9993ae0cce8d.png)
+![image](https://user-images.githubusercontent.com/81537743/230629335-f3201e33-560f-4bf5-9620-332e7c0429c8.png)
 
 To launch it with a list of album links to earn some time :
 ```
