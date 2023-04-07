@@ -2,13 +2,17 @@
 
 import sys
 import os
+import argparse
 import subprocess
 from colorama import Fore, Style
 
-# Checking the number of arguments
-if len(sys.argv) != 2:
-    print("Usage: python3 list.py tabl.txt")
-    sys.exit(1)
+
+# Retrieving the Spotify album link from the command line arguments
+parser = argparse.ArgumentParser(description='Launch download_music_artist.py and download_music_album.py')
+parser.add_argument('-artist', action="store_true", required=False, help='Use Artist Links')
+parser.add_argument('--album', action="store_true", required=False, help='Use Album Links')
+parser.add_argument('tabl', help='Path to tabl.txt')
+args = parser.parse_args()
 
 
 # Error message
@@ -20,8 +24,14 @@ def errortext(msg) -> str:
     print(Fore.RED + "[-] " + msg + Style.RESET_ALL)
 
 
+# Checking the number of arguments
+if not args.tabl or (not args.album and not args.artist) or (args.album and args.artist):
+    errortext("Usage: python3 list.py --album tabl.txt || or || python3 list.py --artist tabl.txt")
+    sys.exit(1)
+
 # Opening the text file in read mode
-FILE_NAME = sys.argv[1]
+FILE_NAME = args.tabl
+
 with open(FILE_NAME, 'r', encoding="utf-8") as f:
     if os.path.getsize(FILE_NAME) == 0:
         errortext("Nothing in the txt file")
@@ -30,11 +40,23 @@ with open(FILE_NAME, 'r', encoding="utf-8") as f:
         for line in f:
             # Removal of spaces at the beginning and end of a line
             line = line.strip()
-            # Execution of the "download line" command using subprocess
-            subprocess.run([
-                "python3",
-                "{ChangePath}{download_music_script}.py",
-                "--temp-path '{ChangePath}'",
-                "--final-path '{ChangePath}'",
-                line
-            ], check=False)
+            if args.artist:
+                # Execution of the "download line" command using subprocess
+                subprocess.run([
+                    "python3",
+                    "/opt/data2To/download/download_music_artist.py",
+                    "--temp-path", "/opt/data2To/download",
+                    "--final-path" ,"/opt/data2To/Musics",
+                    line,
+                    "--verbose"
+                ], check=False)
+            if args.album:
+                # Execution of the "download line" command using subprocess
+                subprocess.run([
+                    "python3",
+                    "/opt/data2To/download/download_music_album.py",
+                    "--temp-path", "/opt/data2To/download",
+                    "--final-path" ,"/opt/data2To/Musics",
+                    line,
+                    "--verbose"
+                ], check=False)
