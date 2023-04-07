@@ -1,3 +1,4 @@
 # add this alias if you want :
 
-alias download='python3 "{ChangePath}/download-music.py"'
+alias download_album='python3 /{changePath}/list.py /{changPath}/tabl.txt'
+alias download_artist='python3 /{changPath}/list.py /{changPath}/tabl.txt'
