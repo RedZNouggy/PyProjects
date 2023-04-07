@@ -4,13 +4,13 @@
 
 ### To launch it if you use the alias in .bashrc : 
 ```
-download {spotify_album_link}
+download_album {spotify_album_link}
 ```
 ![image](https://user-images.githubusercontent.com/81537743/230629335-f3201e33-560f-4bf5-9620-332e7c0429c8.png)
 
 ### To launch it if you use the alias in .bashrc :
 ```
-download {spotify_artist_link}
+download_artist {spotify_artist_link}
 ```
 
 ### Get Spotify Album_link :
