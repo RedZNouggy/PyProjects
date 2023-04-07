@@ -2,13 +2,13 @@
 
 [To Download spotdl](https://github.com/spotDL/spotify-downloader)
 
-### To launch it if you use the alias in .bashrc : 
+### To launch with album link and if you use the alias in .bashrc : 
 ```
 download_album {spotify_album_link}
 ```
 ![image](https://user-images.githubusercontent.com/81537743/230629335-f3201e33-560f-4bf5-9620-332e7c0429c8.png)
 
-### To launch it if you use the alias in .bashrc :
+### To launch with artist link and if you use the alias in .bashrc :
 ```
 download_artist {spotify_artist_link}
 ```
