@@ -12,6 +12,7 @@ parser = argparse.ArgumentParser(description='Launch download_music_artist.py an
 parser.add_argument('-artist', action="store_true", required=False, help='Use Artist Links')
 parser.add_argument('--album', action="store_true", required=False, help='Use Album Links')
 parser.add_argument('tabl', help='Path to tabl.txt')
+parser.add_argument('--verbose', action="store_true", required=False, help='get verbose for download_music*.py')
 args = parser.parse_args()
 
 
@@ -42,21 +43,39 @@ with open(FILE_NAME, 'r', encoding="utf-8") as f:
             line = line.strip()
             if args.artist:
                 # Execution of the "download line" command using subprocess
-                subprocess.run([
-                    "python3",
-                    "/opt/data2To/download/download_music_artist.py",
-                    "--temp-path", "/opt/data2To/download",
-                    "--final-path" ,"/opt/data2To/Musics",
-                    line,
-                    "--verbose"
-                ], check=False)
+                if args.verbose:
+                    subprocess.run([
+                        "python3",
+                        "/opt/data2To/download/download_music_artist.py",
+                        "--temp-path", "/opt/data2To/download",
+                        "--final-path" ,"/opt/data2To/Musics",
+                        line,
+                        "--verbose"
+                    ], check=False)
+               else:
+                    subprocess.run([
+                        "python3",
+                        "/opt/data2To/download/download_music_artist.py",
+                        "--temp-path", "/opt/data2To/download",
+                        "--final-path" ,"/opt/data2To/Musics",
+                        line
+                    ], check=False)
             if args.album:
                 # Execution of the "download line" command using subprocess
-                subprocess.run([
-                    "python3",
-                    "/opt/data2To/download/download_music_album.py",
-                    "--temp-path", "/opt/data2To/download",
-                    "--final-path" ,"/opt/data2To/Musics",
-                    line,
-                    "--verbose"
-                ], check=False)
+                if args.verbose:
+                    subprocess.run([
+                        "python3",
+                        "/opt/data2To/download/download_music_album.py",
+                        "--temp-path", "/opt/data2To/download",
+                        "--final-path" ,"/opt/data2To/Musics",
+                        line,
+                        "--verbose"
+                    ], check=False)
+               else:
+                    subprocess.run([
+                        "python3",
+                        "/opt/data2To/download/download_music_album.py",
+                        "--temp-path", "/opt/data2To/download",
+                        "--final-path" ,"/opt/data2To/Musics",
+                        line
+                    ], check=False)
