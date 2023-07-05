@@ -1,5 +1,3 @@
-## spotdl
-
 [To Download spotdl](https://github.com/spotDL/spotify-downloader)
 
 ![Capture d'écran 2023-03-19 001746](https://github.com/RedZNouggy/PyProjects/blob/main/spotdl/Pictures/Capture%20d%E2%80%99%C3%A9cran%202023-07-05%20233436.png)
