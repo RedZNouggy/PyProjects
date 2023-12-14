@@ -8,6 +8,7 @@ mv PyProjects/Cyber/DVWA/ ./
 sudo rm -r PyProjects/
 cd DVWA/
 pip install -r requirements.txt
+chmod +x ./main.py
 ```
 
 ## b) Launch the script
