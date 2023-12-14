@@ -13,5 +13,12 @@ pip install -r requirements.txt
 ## b) Launch the script
 
 ```
-main.py -ip "<IP>" -f <PATH-TO-PASSWORD-LIST> --http --php-session-id <PHPSESSID> --verbose
+# For a classic utilisation on http :
+main.py --web-ip "<IP>" --file-path <PATH-TO-PASSWORD-LIST> --php-session-id <PHPSESSID> --http
+# For classic utilisation on https : 
+main.py --web-ip "<IP>" --file-path <PATH-TO-PASSWORD-LIST> --php-session-id <PHPSESSID> --https
+# For more info (on http) :
+main.py --web-ip "<IP>" --file-path <PATH-TO-PASSWORD-LIST> --php-session-id <PHPSESSID> --http --verbose
+For all info (on http) :
+main.py --web-ip "<IP>" --file-path <PATH-TO-PASSWORD-LIST> --php-session-id <PHPSESSID> --http --vverbose
 ```
