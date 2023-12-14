@@ -100,7 +100,7 @@ def brute_force(ip, headers, cookies, data, file_path, verbose, vverbose):
                 infotext(response.content)
             if 'Login failed' in response.content.decode('UTF-8'):
                 continue
-            elif 'You have logged in as ' in response.content.decode('UTF-8'):
+             'You have logged in as ' in response.content.decode('UTF-8'):
                 successtext("=================")
                 successtext("Successful Login!")
                 successtext("Credential Found:")
