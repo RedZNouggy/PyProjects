@@ -3,6 +3,7 @@
 ## a) Installation
 
 ```
+pip install -r requirements.txt
 ```
 
 ## b) Launch the script
