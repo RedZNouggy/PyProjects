@@ -10,7 +10,7 @@ cd DVWA/
 pip install -r requirements.txt
 chmod +x ./main.py
 ```
-
+![image](https://github.com/RedZNouggy/PyProjects/assets/81537743/82fcfada-3280-4af7-b1c5-33fd758051f2)
 ## b) Launch the script
 
 ```
