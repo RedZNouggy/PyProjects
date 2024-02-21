@@ -1,5 +1,5 @@
 # PyProjects
-(Obviously, everything in here is made by myself, but I would not dev it like that if i would ever do it again)
+(Obviously, everything in here is made by myself, but I would not dev it like that if i would have do it again)
 ## Cyber 
 For Cyber attacks
 
